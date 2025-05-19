@@ -22,30 +22,12 @@ Welcome to the **HotelBooking** RestAssured automation framework. This project i
 
 ## 📁 Project Structure
 
-HotelBooking/
-│
-├── src/
-│ ├── main/
-│ │ └── java/
-│ │ └── utils/ # Utility classes (e.g., JSON parsers, Excel readers)
-│ ├── test/
-│ │ ├── java/
-│ │ │ ├── tests/ # Test classes
-│ │ │ ├── base/ # Base test setup
-│ │ │ ├── data/ # Test data models (POJOs)
-│ │ │ └── endpoints/ # API endpoint classes
-│ │ └── resources/
-│ │ ├── config.properties # Configuration settings
-│ │ └── testdata.xlsx # Excel test data
-│
-├── logs/ # Log files generated via Log4j
-├── allure-results/ # Allure report results
-├── Jenkinsfile # Jenkins pipeline config
-├── pom.xml # Maven project descriptor
-└── README.md
+
+<img width="364" alt="projectstructure" src="https://github.com/user-attachments/assets/cdd72992-1ea0-4ca9-8a15-a622503d7962" />
 
 
 ---
+
 
 ## ✅ Features
 
@@ -58,6 +40,18 @@ HotelBooking/
 - Integrated CI/CD pipeline with Jenkins
 
 ---
+
+## 🔧 Configuration
+Config file: Located in src/test/resources/config.properties
+
+Test data: Located in testdata.xlsx under resources
+
+## 🙋‍♂️ Contribution
+Feel free to fork the repository, raise issues or pull requests
+
+
+## 📃 License
+This project is open-source and available under the MIT License.
 
 ## 🛠️ Setup & Execution
 
@@ -73,38 +67,24 @@ HotelBooking/
 
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/yourusername/HotelBooking.git
-cd HotelBooking
+ git clone https://github.com/yourusername/HotelBooking.git
+ cd HotelBooking
 
-2.**Run tests using Maven**
+2. **Run tests using Maven**
 
-```bash
 mvn clean test
 
-3.**Generate AllureReport**
+3. **Generate AllureReport**
 Allure report is generated in the allure-results folder and can be viewed using:
 
-```bash
 allure serve allure-results
 
 This will start a local server and open a browser window with the report dashboard.
 
 
-
 4. **Run via Jenkins**
 Set up a Maven job.
-
 Use the provided Jenkinsfile for pipeline execution.
 
-5. **Configuration**
-Config file: Located in src/test/resources/config.properties
-
-Test data: Located in testdata.xlsx under resources
-
- **Contribution**
-Feel free to fork the repository, raise issues or pull requests
 
 
-**License**
-This project is open-source and available under the MIT License.
