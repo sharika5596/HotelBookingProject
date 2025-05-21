@@ -2,6 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="HotelBookingProject">
     <test verbose="2" preserve-order="true" name="C:/Users/medap/RestProject/HotelBookingProject">
-        <classes/>
+        <classes>
+            <class name="tests.e2e_integration.TestIntegrationFlow1"></class>
+        </classes>
     </test>
 </suite>
